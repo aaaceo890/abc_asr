@@ -1,0 +1,61 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="48">
+            <item index="0" class="java.lang.String" itemvalue="scipy" />
+            <item index="1" class="java.lang.String" itemvalue="zhusuan" />
+            <item index="2" class="java.lang.String" itemvalue="dataclasses" />
+            <item index="3" class="java.lang.String" itemvalue="six" />
+            <item index="4" class="java.lang.String" itemvalue="scikit-learn" />
+            <item index="5" class="java.lang.String" itemvalue="pickleshare" />
+            <item index="6" class="java.lang.String" itemvalue="typing-extensions" />
+            <item index="7" class="java.lang.String" itemvalue="Click" />
+            <item index="8" class="java.lang.String" itemvalue="numpy" />
+            <item index="9" class="java.lang.String" itemvalue="fs" />
+            <item index="10" class="java.lang.String" itemvalue="tqdm" />
+            <item index="11" class="java.lang.String" itemvalue="pandas" />
+            <item index="12" class="java.lang.String" itemvalue="dataclasses-json" />
+            <item index="13" class="java.lang.String" itemvalue="seaborn" />
+            <item index="14" class="java.lang.String" itemvalue="tfsnippet" />
+            <item index="15" class="java.lang.String" itemvalue="typing-inspect" />
+            <item index="16" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="17" class="java.lang.String" itemvalue="ml-essentials" />
+            <item index="18" class="java.lang.String" itemvalue="tensorflow-gpu" />
+            <item index="19" class="java.lang.String" itemvalue="pyyaml" />
+            <item index="20" class="java.lang.String" itemvalue="tensorflow" />
+            <item index="21" class="java.lang.String" itemvalue="keras" />
+            <item index="22" class="java.lang.String" itemvalue="more_itertools" />
+            <item index="23" class="java.lang.String" itemvalue="joblib" />
+            <item index="24" class="java.lang.String" itemvalue="neurokit2" />
+            <item index="25" class="java.lang.String" itemvalue="jsonschema" />
+            <item index="26" class="java.lang.String" itemvalue="gitpython" />
+            <item index="27" class="java.lang.String" itemvalue="dgl" />
+            <item index="28" class="java.lang.String" itemvalue="SciencePlots" />
+            <item index="29" class="java.lang.String" itemvalue="xlrd" />
+            <item index="30" class="java.lang.String" itemvalue="sktime" />
+            <item index="31" class="java.lang.String" itemvalue="patool" />
+            <item index="32" class="java.lang.String" itemvalue="reformer-pytorch" />
+            <item index="33" class="java.lang.String" itemvalue="torch" />
+            <item index="34" class="java.lang.String" itemvalue="einops" />
+            <item index="35" class="java.lang.String" itemvalue="sympy" />
+            <item index="36" class="java.lang.String" itemvalue="nimfa" />
+            <item index="37" class="java.lang.String" itemvalue="stumpy" />
+            <item index="38" class="java.lang.String" itemvalue="tamu_d3m" />
+            <item index="39" class="java.lang.String" itemvalue="more-itertools" />
+            <item index="40" class="java.lang.String" itemvalue="statsmodels" />
+            <item index="41" class="java.lang.String" itemvalue="pillow" />
+            <item index="42" class="java.lang.String" itemvalue="combo" />
+            <item index="43" class="java.lang.String" itemvalue="tamu_axolotl" />
+            <item index="44" class="java.lang.String" itemvalue="simplejson" />
+            <item index="45" class="java.lang.String" itemvalue="scikit_learn" />
+            <item index="46" class="java.lang.String" itemvalue="pytest" />
+            <item index="47" class="java.lang.String" itemvalue="setuptools" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

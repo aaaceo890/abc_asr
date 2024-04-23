@@ -1,0 +1,11 @@
+pretrained_api: "v2"
+
+pretraine_path: "/home/Chenjq/espnet2/egs/boneconduct/asr_air/exp/train_pytorch_fine_tune_ns_air/results/model.loss.best"
+map_keys:
+ignore_keys:
+
+pretraine_path:
+map_keys:
+ignore_keys:
+
+freeze_all: true
