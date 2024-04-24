@@ -14,11 +14,10 @@ set -e
 set -u
 set -o pipefail
 
-export CUDA_VISIBLE_DEVICES=2
-nj=2
+export CUDA_VISIBLE_DEVICES=0
+nj=6
 # general configuration
-# recog_set="test test_-5db test_0db test_+5db test_+10db test_+15db test_+20db"
-recog_set="test_-5db test_0db test_+5db test_+10db test_+15db test_+20db"
+recog_set="test test_-5db test_0db test_+5db test_+10db test_+15db test_+20db"
 dict=./data/feature/char_dict.txt
 
 pids=() # initialize pids

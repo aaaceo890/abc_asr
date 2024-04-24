@@ -1,4 +1,3 @@
-# from CDPR.utils.decorators import multi_processing
 import json
 from tqdm import tqdm
 import re

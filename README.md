@@ -58,13 +58,13 @@
 
 ### Inference
 
-1. Make sure you have correctly installed kaldi and ESPnet.  Then modify the 3rd line in `test.sh`:
+1. Ensure that  kaldi and ESPnet are properly installed on your environment. Next,  have correctly adjust the third line in `test.sh`:
 
     ```
     export ESPNETROOT=<Your Espnet Root>
     ```
 
-2. Download model parameters file here [[Onedrive](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/jqchen_mail_nwpu_edu_cn/EWmrzNQfDf1FmZ7JIyx9xqsBaTOcgVR8Zou2x3hAvqWH2g)] or [[Baidu Cloud](https://pan.baidu.com/s/1FGncmBcVP29WCeLWzzaEiw?pwd=1alm)]
+2. Download the model parameters file here [[Onedrive](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/jqchen_mail_nwpu_edu_cn/EWmrzNQfDf1FmZ7JIyx9xqsBaTOcgVR8Zou2x3hAvqWH2g)] or [[Baidu Cloud](https://pan.baidu.com/s/1FGncmBcVP29WCeLWzzaEiw?pwd=1alm)]
 
     ```
     mv model.acc.best <Your Path>/abc_asr/results

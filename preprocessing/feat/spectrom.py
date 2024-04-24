@@ -3,10 +3,6 @@ import numpy as np
 import logging
 from feat import feats_utils
 
-# copy frome espnet and modify some detail
-# base on librosa
-
-
 def stft(x, n_fft, hop_length, win_length, window="hann", center=False, dtype=np.float32, pad_mode="reflect"):
     """
     :param y: input time domain signal (channel, time, freqency)

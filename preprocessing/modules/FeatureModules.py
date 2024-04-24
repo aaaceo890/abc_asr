@@ -2,7 +2,6 @@ import os
 import os.path as path
 import json
 import numpy as np
-import re
 
 from feat import spectrom
 from utils.io_utils import load_audio
@@ -12,8 +11,6 @@ from utils.validate import validate_feats_files
 from utils.set_config import SPEED_FORMAT, SPEED_REGEX
 
 
-# Methods
-# @multi_processing(n_jobs=16, gather="dict")
 def make_fbank(key, data, feat_dir, soundtrack=None, speed=None, **conf):
     """
     input Data path and Targe path
