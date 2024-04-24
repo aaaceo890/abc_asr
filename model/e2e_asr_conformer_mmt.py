@@ -15,11 +15,7 @@ from espnet.nets.pytorch_backend.e2e_asr_transformer import E2E as E2ETransforme
 from espnet.nets.pytorch_backend.conformer.argument import (
     add_arguments_conformer_common,  # noqa: H301
 )
-from espnet.nets.pytorch_backend.conformer.encoder import Encoder
-from espnet.nets.pytorch_backend.transformer.attention import (
-    MultiHeadedAttention,  # noqa: H301
-    RelPositionMultiHeadedAttention,  # noqa: H301
-)
+from espnet.nets.pytorch_backend.transformer.attention import MultiHeadedAttention
 from espnet.nets.pytorch_backend.transformer.dynamic_conv2d import DynamicConvolution2D
 from espnet.nets.pytorch_backend.transformer.dynamic_conv import DynamicConvolution
 from espnet.nets.pytorch_backend.ctc import CTC
@@ -27,8 +23,9 @@ from espnet.nets.pytorch_backend.ctc import CTC
 from espnet.nets.pytorch_backend.transformer.plot import PlotAttentionReport
 
 # customize models
+from model.encoder import Encoder
 from model.decoder import DoubleDecoder as Decoder
-from model.attention import SparseAttention
+from model.attention import SparseAttention, RelPositionMultiHeadedAttention
 from model.ctc import CTCPrefixScorer_two_str
 
 class Reporter(chainer.Chain):

@@ -14,12 +14,12 @@
 
    first, and you can use the modules in `model` package.
 
-2. If you want to do full experiments, you need to correctly install espnet and kaldi first. See Installation](https://espnet.github.io/espnet/installation.html).
+2. If you want to do full experiments, you need to correctly install espnet and kaldi first. See [Installation](https://espnet.github.io/espnet/installation.html).
 
    Next, run
 
    ```
-   pip install requirements.txt
+   pip install -r requirements.txt
    ```
 
    to install the required packages.
@@ -32,7 +32,7 @@
 
    Download ABCS Corpus here: [Links](https://github.com/wangmou21/abcs?tab=readme-ov-file).
 
-   Download noisy air conducted data (ns_air_data.zip) here: Links
+   Download noisy air conducted data (ns_air_data.zip) here: [[Onedrive](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/jqchen_mail_nwpu_edu_cn/EZShUMFoYnlPo-WwZ2DXZbgB-3gmW7sUoRLdCR7Z4vuF1A?e=zuH0L4)] or [Baidu Cloud]
 
    Unzip the noisy data to ABCS's directory:
 
@@ -58,17 +58,19 @@
 
 ### Inference
 
-Make sure you have correctly installed kaldi and espnet.  Then modify the 3 line in `test.sh`:
+1. Make sure you have correctly installed kaldi and espnet.  Then modify the 3 line in `test.sh`:
 
-```
-export ESPNETROOT=<Your Espnet Root>
-```
+    ```
+    export ESPNETROOT=<Your Espnet Root>
+    ```
 
-Run
+2. Download model parameters file here [[Onedrive](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/jqchen_mail_nwpu_edu_cn/EWmrzNQfDf1FmZ7JIyx9xqsBaTOcgVR8Zou2x3hAvqWH2g)] or [Baidu Cloud]
 
-```
-bash test.sh
-```
+3. Run
+
+    ```
+    bash test.sh
+    ```
 
 
 

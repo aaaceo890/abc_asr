@@ -1,6 +1,0 @@
-tr-fw: true
-mul-layer: false
-use-sparsemax: false
-v-trans: true
-scale: -1
-tr-scale: false

@@ -15,10 +15,10 @@ set -u
 set -o pipefail
 
 export CUDA_VISIBLE_DEVICES=2
-nj=12
+nj=2
 # general configuration
 # recog_set="test test_-5db test_0db test_+5db test_+10db test_+15db test_+20db"
-recog_set="test"
+recog_set="test_-5db test_0db test_+5db test_+10db test_+15db test_+20db"
 dict=./data/feature/char_dict.txt
 
 pids=() # initialize pids
@@ -31,7 +31,7 @@ splitjson.py --parts ${nj} ${feat_recog_dir}/data.json
 
 ${decode_cmd} JOB=1:${nj} ./exp/${decode_dir}/log/decode.JOB.log \
     asr_recog.py \
-    --config conf/decode_greedy.yaml \
+    --config conf/decode.yaml \
     --ngpu 1 \
     --backend pytorch \
     --batchsize 0 \
