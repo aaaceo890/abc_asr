@@ -94,7 +94,7 @@ The training pipeline.
 
 ### Citing
 
-If you found this code useful, please cite this:
+If you found this code helpful, please consider citing it as follows:
 
 ```
 @ARTICLE{9961873,
