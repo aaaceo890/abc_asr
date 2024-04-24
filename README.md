@@ -12,9 +12,9 @@
    pip install espnet
    ```
 
-   first, and you can use the modules in `model` package.
+   first, and you can use the modules in `abc_asr/model`.
 
-2. If you want to do full experiments, you need to correctly install espnet and kaldi first. See [Installation](https://espnet.github.io/espnet/installation.html).
+2. If you want to do full experiments, you need to correctly install ESPnet and kaldi first. See [Installation](https://espnet.github.io/espnet/installation.html).
 
    Next, run
 
@@ -30,17 +30,17 @@
 
 1. Download dataset.
 
-   Download ABCS Corpus here: [Links](https://github.com/wangmou21/abcs?tab=readme-ov-file).
+   Download the ABCS Corpus here: [Links](https://github.com/wangmou21/abcs?tab=readme-ov-file).
 
-   Download noisy air conducted data (ns_air_data.zip) here: [[Onedrive](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/jqchen_mail_nwpu_edu_cn/EZShUMFoYnlPo-WwZ2DXZbgB-3gmW7sUoRLdCR7Z4vuF1A?e=zuH0L4)] or [Baidu Cloud]
+   Download the noisy air conducted data (`ns_air_data.zip`) here: [[Onedrive](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/jqchen_mail_nwpu_edu_cn/EZShUMFoYnlPo-WwZ2DXZbgB-3gmW7sUoRLdCR7Z4vuF1A?e=zuH0L4)] or [[Baidu Cloud](https://pan.baidu.com/s/1Q__uDxhqsO9TR5EXpW7eiw?pwd=9stk)]
 
-   Unzip the noisy data to ABCS's directory:
+   Unzip the noisy data into ABCS's directory:
 
    ```
    unzip -d <ABCS dir>/Audio/ ns_air_data.zip
    ```
 
-2. Run data preparation code.
+2. Execute the data preparation script.
 
    For inference only:
 
@@ -58,19 +58,31 @@
 
 ### Inference
 
-1. Make sure you have correctly installed kaldi and espnet.  Then modify the 3 line in `test.sh`:
+1. Make sure you have correctly installed kaldi and ESPnet.  Then modify the 3rd line in `test.sh`:
 
     ```
     export ESPNETROOT=<Your Espnet Root>
     ```
 
-2. Download model parameters file here [[Onedrive](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/jqchen_mail_nwpu_edu_cn/EWmrzNQfDf1FmZ7JIyx9xqsBaTOcgVR8Zou2x3hAvqWH2g)] or [Baidu Cloud]
+2. Download model parameters file here [[Onedrive](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/jqchen_mail_nwpu_edu_cn/EWmrzNQfDf1FmZ7JIyx9xqsBaTOcgVR8Zou2x3hAvqWH2g)] or [[Baidu Cloud](https://pan.baidu.com/s/1FGncmBcVP29WCeLWzzaEiw?pwd=1alm)]
+
+    ```
+    mv model.acc.best <Your Path>/abc_asr/results
+    ```
 
 3. Run
 
     ```
     bash test.sh
     ```
+
+
+
+### Results (CER %)
+
+|                  | SNR=-5dB | SNR=0dB | SNR=5dB | SNR=10dB | SNR=15dB | SNR=20dB | Clean |
+| ---------------- | -------- | ------- | ------- | -------- | -------- | -------- | ----- |
+| The proposed MMT | 17.5     | 14.9    | 11.8    | 9.4      | 7.9      | 7.1      | 6.7   |
 
 
 
