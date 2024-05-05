@@ -1,4 +1,4 @@
-from CDPR.modules.DataGenerator.data_generator import DataGenerator as InterFace
+from modules.DataGenerator.data_generator import DataGenerator as InterFace
 import re
 
 special_symbol = '[\u0021-\u0026,\u0028-\u002f,\u003a-\u0040,\u005b-\u0060,\u2000-\u206f,\u3000-\u303f,\uff00-\uffef]'

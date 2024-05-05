@@ -2,7 +2,7 @@ import os
 import re
 import logging
 from abc import abstractmethod
-from CDPR.utils.validate import validate_audio_text
+from utils.validate import validate_audio_text
 
 
 class DataGenerator(object):
